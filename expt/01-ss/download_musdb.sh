@@ -12,5 +12,5 @@ if [ ! -d "$DATA_ROOT" ]; then
     exit 1
 fi
 
-wget https://zenodo.org/api/records/3338373/files/musdb18hq.zip/content $DATA_ROOT/musdb18hq.zip
+wget -O "$DATA_ROOT/musdb18hq.zip" "https://zenodo.org/api/records/3338373/files/musdb18hq.zip/content" 
 unzip $DATA_ROOT/musdb18hq.zip -d $DATA_ROOT/musdb18hq
