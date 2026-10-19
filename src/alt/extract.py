@@ -127,7 +127,7 @@ def extract_musdb_alt(cfg: dict, dataset_id: str) -> list[Song]:
         "jazasyed/musdb-alt",
         revision=cfg["revision"],
         trust_remote_code=True,
-        tagged=True,
+        # tagged=True,
     )  # type: ignore
     infos: list[Song] = []
     for row in tqdm(dataset["test"]):

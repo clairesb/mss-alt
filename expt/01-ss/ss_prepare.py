@@ -31,5 +31,5 @@ if __name__ == "__main__":
     for demucs_model in demucs_model_names:
         config = SeparateConfig(model_name=demucs_model, model_type="demucs", cached=True)
         output_path = separation_dir() / demucs_model
-        output_path.mkdir(exist_ok=True)
+        output_path.mkdir(exist_ok=True, parents=True)
         run_separate(songs, output_path, config=config)
