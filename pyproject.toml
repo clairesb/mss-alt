@@ -19,6 +19,9 @@ platforms = ["linux-64", "osx-arm64"]
 [tool.pixi.dependencies]
 # pytorch 2.7 does not support ffmpeg 7
 ffmpeg = "<7"
+setuptools = "<81"
+wheel = "*"
+av = "*"
 
 # Core PyPI-level runtime deps
 [tool.pixi.pypi-dependencies]
@@ -58,7 +61,7 @@ pydantic = "*"
 
 [tool.pixi.pypi-options]
 # so that torch is already available when trying to install flash-attn
-no-build-isolation = ["flash-attn"]
+no-build-isolation = ["flash-attn", "openai-whisper"]
 
 # ────────────────────────────────────────────────────────────────────────────────
 # Build wheel target
