@@ -25,6 +25,7 @@ wandb/
 cache/
 artifacts/
 audio/
+logs/
 
 # local env variables
 .envrc
