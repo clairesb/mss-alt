@@ -37,3 +37,6 @@ tensorboard/
 run.sh
 lightning_logs/
 .vscode/
+
+*.err
+*.out
