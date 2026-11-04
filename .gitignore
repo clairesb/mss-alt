@@ -41,3 +41,4 @@ lightning_logs/
 
 *.err
 *.out
+*.ipynb_checkpoints/
